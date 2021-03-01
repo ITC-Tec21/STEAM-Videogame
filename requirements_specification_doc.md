@@ -1,7 +1,7 @@
 # Agustín Pumarejo Ontañón, Sebastián Juncos Leunig, Adriana Abella Kuri
 
 # Connecting Maze / Peeprol Maze
-Juego de puzzle en el que se completa un circuito con compuertas lógicas para emitir una señal. hola
+Juego de puzzle en el que se completa un circuito con compuertas lógicas para emitir una señal.
 
 # Table of content
 
@@ -70,18 +70,6 @@ El jugador podrá consultar información acerca de la empresa STEAM y sobre los 
 El analista de STEAM podrá consultar los datos a través de una interfaz de usuario.
 El usuario podrá ajustar el volumen de los efectos y la música.
 
-Include user stories, which are short descriptions of a feature, told from the perspective of one of your end user profiles. They are typically structured in the following fashion:
-
-> As a __[type of user]__, I want __[some goal]__ so that __[some reason]__.
-
-You may want to use the following template table.
-
-|Title|User story|Importance|Notes|
-|---|---|---|---|
-|Alumno de preparatoria|Instrucciones rápidas antes de interactuar con las mecánicas del juego|Permite al jugador entender las reglas del juego de manera fácil e intuitiva|debemos hacer estas instrucicones lo mas sencillas posibles para que los usuarios entiendan las reglas del juego en menos 5 minutos|
-|Analista de STEAM|Un juego con indicadores del puntaje de cada usuario dependiendo del tiempo que le toma en resolver el problema|Para medir el  desempeño de cada jugador|N\A|
-|_Short identifier_|_As a [type of user], I want [some goal] so that [some reason]_|_Must have_|_Write here any additional consideration_|
-
 ## External Interface Requirements
 External interface requirements are types of functional requirements. They outline how your product will interface with other components or systems.
 
@@ -101,15 +89,17 @@ Los niveles se irán desbloqueando conforme el jugador progrese en el juego.
 
 El jugador podrá escoger cualquier nivel que ya haya superado.
 
+El jugador podrá entender las reglas del juego de manera fácil e intuitiva en menos de 5 minutos.
+
 # Screens
   especificar user classes que tienen acceso a las pantallas
 Identifying the individual screens (for an app), or pages (for a website) are where a product’s shape starts to become clear. They are a distillation of the user stories into a set of distinct sections that satisfy the needs and behaviors identified so far. The process of outlining an application’s screens may also highlight any requirements or considerations that have been overlooked up to this point.
 
 ###Juego:
 
-Menu de pausa
+Menú de pausa
 
-Seleccion de nivel
+Selección de nivel
 
 Pantalla con el nivel actual
 
@@ -123,9 +113,14 @@ Videojuego.
 
 Acerca de STEAM.
 
-Resultados recabados (Solo para analistas de STEAM).
+Resultados recabados.
 
 Reglas explicación e información del juego.
+
+###Acceso a pantallas por clases de usuario:
+
+Jugador: Menú de pausa, selección de nivel, pantalla con el nivel actual, ajustes, login/register, videojuego, acerca de STEAM, reglas e información del juego.
+Analista de STEAM: Pantallas del jugador más acceso a los resultados recabados.
 
 This has the dual purpose of both contributing to a more accurate vision of the product early on, and serving as a jumping-off point for the time when designers do get involved.
 
