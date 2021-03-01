@@ -1,7 +1,7 @@
 # Agustín Pumarejo Ontañón, Sebastián Juncos Leunig, Adriana Abella Kuri
 
 # Connecting Maze / Peeprol Maze
-Juego de puzzle en el que se completa un circuito con compuertas lógicas para emitir una señal.
+Juego de puzzle en el que se completa un circuito con compuertas lógicas para emitir una señal. hola
 
 # Table of content
 
