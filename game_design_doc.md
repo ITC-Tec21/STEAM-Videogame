@@ -31,44 +31,57 @@
 # Game Design
 
 ## Summary
-Sum up your game idea in 2 sentences. A kind of elevator pitch. Keep it simple!
+A puzzle/simulator game in which the player has to partially or completely build a circuit using logic gates given a circuit specification. 
 
 ## Gameplay
+The player will drag and drop components to edit the circuit. The number of movements/components used to complete the circuit will determine the player's score for that level (less movements/components = higher score). Players can toggle a real-time visual simulation of the circuit. 
+
 What should the gameplay be like? What is the goal of the game, and what kind of obstacles are in 
 the way? What tactics should the player use to overcome them?
 
 ## Mindset
-What kind of mindset do you want to provoke in the player? Do you want them to feel powerful, or 
-weak? Adventurous, or nervous? Hurried, or calm? How do you intend to provoke those emotions?
+Players will feel like each level is challenging, but still within their understanding. As they progress, they will develop their own strategies and begin to recognize patterns in the circuits. In the latest stages of the game, the players will feel confident when approaching a new level and also eager to find challenging puzzles.
+Due to the fact that score isn't calculated by the time it takes for you to complete the level but rather the number of movements, the player will feel calm and at the same time concentrated and invested in what they're doing.
 
 # Technical
+In order for the game to simulate and verify circuits accurately, each one of them will be represented as a map in the following way:
+- Nodes = logic gates
+- Edges = wires
+- Leaves = inputs
+- Root = output
  
 ## Screens
 
-```
-1. Title Screen
-    a. Options
-2. Level Select
+1. Title screen
+	a. Options
+	b. User score
+	c. Credits
+2. Level select
 3. Game
-    a. Inventory
-    b. Assessment / Next Level
-4. End Credits
-```
-
-_(example)_
+	a. Pause
+	b. Gate select
+	c. Circuit
 
 ## Controls
-How will the player interact with the game? Will they be able to choose the controls? What kind of 
-in-game events are they going to be able to trigger, and how? (e.g. pressing buttons, opening doors, etc.)
+The player will drag and drop logic gates into and out of the circuit to modify it. 
 
 ## Mechanics
+Each level will replicate a real-life functioning circuit.
 Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, 
 algorithms, etc.
 
 # Level Design
  (Note : These sections can safely be skipped if they’re not relevant, or you’d rather go about it another way. For most games, at least one of them should be useful. But I’ll understand if you don’t want to use them. It’ll only hurt my feelings a little bit.)
+ 
+1. Tutorials: There will be no circuits to edit, you'll only be able to interact with a single logic gate at a time in order to understad the way it works.
+2. Basic levels: There will be a small amount of inputs and outputs and each level might have many distinct solutions.
+3. Intermediate levels: The size of the circuits will be increased, only a few combinations will result in the correct output, and you're introduced to a wider variety of logic gates.
+4. Advanced levels: There will be only one or two distinct solutions and more logic gate types to work with.
 
 ## Themes
+
+1. Mother board circuit
+2. Individual circuits
 ```
 1.	Forest
     a.	Mood
@@ -99,6 +112,7 @@ algorithms, etc.
 _(example)_
 
 ## Game Flow
+1. Same layout in all levels, all the time
 ```
 1.	Player starts in forest
 2.	Pond to the left, must move right
