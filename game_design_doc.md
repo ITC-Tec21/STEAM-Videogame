@@ -45,6 +45,7 @@ Players will feel like each level is challenging, but still within their underst
 Due to the fact that score isn't calculated by the time it takes for you to complete the level but rather the number of movements, the player will feel calm and at the same time concentrated and invested in what they're doing.
 
 # Technical
+Circuit Specifications: A set o logical expressions that define the output of a circuit for each combination of inputs
 In order for the game to simulate and verify circuits accurately, each one of them will be represented as a map in the following way:
 - Nodes = logic gates
 - Edges = wires
@@ -52,7 +53,7 @@ In order for the game to simulate and verify circuits accurately, each one of th
 - Root = output
  
 ## Screens
-
+```
 1. Title screen
 	a. Options
 	b. User score
@@ -62,14 +63,13 @@ In order for the game to simulate and verify circuits accurately, each one of th
 	a. Pause
 	b. Gate select
 	c. Circuit
+```
 
 ## Controls
 The player will drag and drop logic gates into and out of the circuit to modify it. 
 
 ## Mechanics
 Each level will replicate a real-life functioning circuit. The circuits are dynamic and they change in real-time when the player interacts with them.
-Are there any interesting mechanics? If so, how are you going to accomplish them? Physics, 
-algorithms, etc.
 
 # Level Design 
 1. Tutorials: There will be no circuits to edit, you'll only be able to interact with a single logic gate at a time in order to understad the way it works.
@@ -80,8 +80,9 @@ algorithms, etc.
 ## Themes
 1. Mother board circuit
 2. Individual circuits
-3. 
+
 ## Game Flow
+```
 1. Tutorials
 	a. Logic gate
 		i. A circuit with 2 inputs, a logic gate and 1 output is presented to the player
@@ -109,6 +110,7 @@ algorithms, etc.
 	d. The player submits their solution
 	e. The solution is tested by the game
 	f. If the solution is correct, the player moves on to the next level. If not, they can keep trying.
+```
 
 # Development
  
@@ -124,6 +126,7 @@ algorithms, etc.
 9. MainCamera
 
 ## Derived Classes / Component Compositions
+```
 1. BaseLogicGate
 	a. AND
 	b. OR
@@ -134,10 +137,13 @@ algorithms, etc.
 	g. XNOR
 2. BaseInput
 	a. FixedInput
+		i. True input
+		ii. False input
 	b. ChangeableInput
 3. InteractableButton
 	a. HomeButton
 	b. SettingsButton
+```
 
 # Graphics
 
@@ -148,6 +154,7 @@ algorithms, etc.
 - Green or red inputs/outputs
 
 ## Graphics Needed
+```
 1. Logic gates
 	a. AND
 	b. OR
@@ -171,6 +178,7 @@ algorithms, etc.
 6. Logic Gates UI
 7. Instructions UI
 8. Background
+```
 
 # Sounds/Music
  
@@ -187,18 +195,22 @@ Sound effects:
 - Star wars like
 
 ## Sounds Needed
+```
 1. Effects
 	a. Logic gate dropped
 	b. Input changed
+	c. Button clicked
+	d. Sliding effect for UI
 2. Feedback
 	a. Wrong solution sound
 	b. Correct solution sound
-
+```
 ## Music Needed
 1. Chill ambient sound "main menu" track
 2. Medium-paced synth arpegios music "level" track
 
 # Schedule
+```
  1. Define style and gameplay
  	a. Base style 
 		i. Logic gates
@@ -219,3 +231,4 @@ Sound effects:
 	b. Check difficulty of each level so that they are balanced
 4. Design music
 5. Design effects
+```
