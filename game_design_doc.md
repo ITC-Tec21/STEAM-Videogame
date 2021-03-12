@@ -1,8 +1,5 @@
 # Circuit Sandbox
 > Game Design Document
-> Sebastian Juncos
-> Agustin Pumarejo
-> Adriana Abella
 # Table of Content
 
 - [Game Design](#game-design)
@@ -31,6 +28,10 @@
 
 
 # Game Design
+
+Sebastian Juncos
+Agustin Pumarejo
+Adriana Abella
 
 ## Summary
 A puzzle/simulator game in which the player has to partially or completely build a circuit using logic gates given a circuit specification. 
