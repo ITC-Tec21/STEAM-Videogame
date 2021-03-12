@@ -1,8 +1,8 @@
 # Circuit Sandbox
 > Game Design Document
-Sebastian Juncos
-Agustin Pumarejo
-Adriana Abella
+> Sebastian Juncos
+> Agustin Pumarejo
+> Adriana Abella
 # Table of Content
 
 - [Game Design](#game-design)
